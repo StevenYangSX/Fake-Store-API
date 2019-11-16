@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const UserSchema = mongoose.Schema({
-    cart: {
-        type: Array
-    },
+    cart: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'items'
+    }],
     name: {
         type: String,
         required: true
