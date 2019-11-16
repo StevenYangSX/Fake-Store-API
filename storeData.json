@@ -158,6 +158,359 @@
         "isFeatured": false,
         "remaining": 5,
         "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/104/10432/10432188.jpg"
+    },
+    {
+        "brand": {
+            "name": "Apple",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "MacBook Pro",
+        "category": "computer",
+        "price": 2999.99,
+        "model": "w/ Touch Bar 16\"",
+        "details": "Designed for those who defy limits and change the world, the MacBook Pro is is power-packed. With an immersive 16-inch Retina display, superfast processors, super-charged graphics, large battery capacity, a Magic Keyboard, and massive storage space, it's the ultimate pro notebook for the ultimate user.",
+        "isFeatured": true,
+        "remaining": 5,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/143/14335/14335048.jpg"
+    },
+
+    {
+        "brand": {
+            "name": "Dell",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Gaming PC",
+        "category": "computer",
+        "price": 1599.99,
+        "model": "Intel i7-9700/1TB HDD/256GB SSD/16GB RAM/GeForce RTX 2060",
+        "details": "Enjoy a new level of gaming with this Dell gaming PC. This PC is equipped with an Intel i7-9700 processor to provide lag-free performance, while the 16GB DDR4 RAM delivers an exceptional multi-tasking experience. The unique air-cooling system offers a smooth and interruption-free gaming experience.",
+        "isFeatured": true,
+        "remaining": 9,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/136/13617/13617931.jpg"
+    },
+    {
+        "brand": {
+            "name": "ASUS ROG",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Gaming PC",
+        "category": "computer",
+        "price": 119.99,
+        "model": "Mechanical Cherry MX Red",
+        "details": "Transform your gaming experience with the ASUS ROG Strix Flare backlit mechanical gaming keyboard. Engineered with Cherry MX RGB switches, it delivers fast response times and enhanced performance.  It's equipped anti-ghosting technology, on-the-fly macro recording, and customizable lighting effects for precision gaming.",
+        "isFeatured": false,
+        "remaining": 29,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/131/13197/13197698.jpg"
+    },
+    {
+        "brand": {
+            "name": "Logitech",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Bluetooth Laser Mouse",
+        "category": "computer",
+        "price": 99.99,
+        "model": "MX Master",
+        "details": "Master your enemies or your latest work assignment with the Logitech MX Master Bluetooth laser mouse. Designed for power users, this high-end product is optimized for both Windows and Mac and features a hand-sculpted contour to provide comfort even through hours of use.",
+        "isFeatured": false,
+        "remaining": 2,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/126/12642/12642294.jpg"
+    },
+    {
+        "brand": {
+            "name": "LG",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Gaming Monitor",
+        "category": "computer",
+        "price": 229.99,
+        "model": "29WL500-B",
+        "details": "Designed for serious gamers, this LG 29\" ultra-wide LED gaming monitor will take your game play to new heights. Equipped with AMD Radeon FreeSync technology and Full HD resolution, it delivers stunning, true-to-life visuals so you see every detail in vibrant colour. Gaming-specific features help you to effortlessly annihilate the competition.",
+        "isFeatured": false,
+        "remaining": 8,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/136/13618/13618806.jpg"
+    },
+    {
+        "brand": {
+            "name": "Alienware",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Amplifier",
+        "category": "computer",
+        "price": 349.99,
+        "model": "452-BCFE",
+        "details": "No more compromise. With the Alienware graphics amplifier you can take advantage of a desktop-class graphics without having to upgrade your laptop. The accessible design lets you upgrade the graphics card to suit your needs and is equipped with a 460W power supply that lets you run high-performance graphics worry free.",
+        "isFeatured": false,
+        "remaining": 48,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/105/10516/10516455.jpg"
+    },
+    {
+        "brand": {
+            "name": "Google",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "Power Adapter",
+        "category": "computer",
+        "price": 75.00,
+        "model": "Pixelbook 45W USB-C",
+        "details": "Keep your Google Pixelbook charged and connected with this Google Pixelbook USB-C power adapter. Designed specifically for use with your Pixelbook, this power adapter can also be used with a variety of USB-C enabled devices.",
+        "isFeatured": false,
+        "remaining": 2,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/116/11696/11696072.jpg"
+    },
+    {
+        "brand": {
+            "name": "HP",
+            "popularity": true
+        },
+        "isOnSale": false,
+        "isAvailable": true,
+        "name": "All-In-One Desktop PC",
+        "category": "computer",
+        "price": 75.00,
+        "model": "Intel i5-9400T/2TB HDD/128GB SSD/12GB RAM/Windows 10",
+        "details": "Get things done in no time with the speed and dependability of the HP 27\" all-in-one desktop PC. It boasts a powerful, reliable 1.8GHz Intel Core i5-9400T processor with 12GB RAM and combination 2TB HDD and 128GB SSD for digital file storage and faster loading. Immerse yourself in the realistic full HD WLED-backlit display with 10-point touchscreen.",
+        "isFeatured": false,
+        "remaining": 2,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/136/13655/13655401.jpg"
+    },
+    {
+        "brand": {
+            "name": "Canon",
+            "popularity": true
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Printer",
+        "category": "computer",
+        "price": 129.99,
+        "model": "CP1300 Wireless",
+        "details": "Print high quality photos on-the-go with the SELPHY CP1300 compact photo printer. Wi-Fi enabled, it can print your favourite pics wirelessly from your connected smartphone or tablet. It also features a memory card slot and USB port, so you can print photos from your camera, computer, and more.",
+        "isFeatured": false,
+        "remaining": 2,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/113/11339/11339979.jpg"
+    },
+    {
+        "brand": {
+            "name": "Logitech",
+            "popularity": true
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Keyboard Case",
+        "category": "computer",
+        "price": 129.99,
+        "model": "iPad Air (2019) & iPad Pro 10.5\"",
+        "details": "Add new dimensions of functionality to your iPad Pro with the Slim Combo keyboard case. Whether browsing videos on YouTube, typing an important e-mail, or video chatting with friends, this keyboard case makes your iPad a master of adaptation. Easy to install with the Smart Connector, the Slim Combo even has a home for your Apple Pencil.",
+        "isFeatured": false,
+        "remaining": 2,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/114/11428/11428839.jpg"
+    },
+    {
+        "brand": {
+            "name": "Instant Pot",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Pressure Cooker",
+        "category": "Appliances",
+        "price": 89.99,
+        "model": "7-in-1",
+        "details": "Cook your favourite meals in a fraction of the time with the Instant Pot IP-DUO. This 7-in-1 multifunction cook lets you pressure cook, slow cook, saute, steam, and more. It has 10 fool-proof safety features built-in with a microprocessor that monitors pressure and temperature, adjusts heating intensity, and more, giving you peace of mind.",
+        "isFeatured": false,
+        "remaining": 7,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/104/10456/10456264.jpg"
+    },
+    {
+        "brand": {
+            "name": "KitchenAid",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Slow Cooker",
+        "category": "Appliances",
+        "price": 127.99,
+        "model": "6Qt",
+        "details": "Come home to a delicious slow-cooked meal thanks to the KitchenAid 5.7L slow cooker. Featuring a large ceramic oval cooking vessel, this slow cooker has a digital display with 4 temperature settings and 24-hour programmability. When the cooking is done the slow cooker automatically goes into keep warm mode for up to 4 hours.",
+        "isFeatured": false,
+        "remaining": 27,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/106/10668/10668109.jpg"
+    },
+    {
+        "brand": {
+            "name": "De'Longhi",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Coffee Machine",
+        "category": "Appliances",
+        "price": 199.99,
+        "model": "Manual Espresso & Cappuccino",
+        "details": "Make delicious, barrista-quality espressos, cappuccinos, and lattes in the comfort of your own home with this De'Longhi manual espresso machine. Its advanced cappuccino system maintains the temperature, so there's no waiting between brewing cups. Achieve the perfect creamy foam with the manual frother that combines steam and milk to perfection.",
+        "isFeatured": false,
+        "remaining": 1,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/133/13391/13391542.jpg"
+    },
+    {
+        "brand": {
+            "name": "Hamilton",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Toaster",
+        "category": "Appliances",
+        "price": 34.99,
+        "model": "4-Slice",
+        "details": "The Hamilton Beach 4-slice Classic Chrome Toaster offers up handy one-touch smart functions for reheat, defrost, bagel, and cancel. Unique built-in bagel technology toasts the cut side of the bagel while gently warming the rounded side for the perfect bagel. You can even toast one slice more than the other with dual controls that allow two different toasting selections at the same time.",
+        "isFeatured": false,
+        "remaining": 13,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/102/10233/10233487.jpg"
+    },
+    {
+        "brand": {
+            "name": "Hamilton",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Toaster Oven",
+        "category": "Appliances",
+        "price": 49.99,
+        "model": "6-Slice - Stainless Steel",
+        "details": "The Hamilton Beach Easy-Reach Convection Toaster Oven makes it a breeze to grab your hot food safely and quickly. Designed for easy access, it offers a large, curved glass door and an auto-advance rack that conveniently brings food forward to you as you open the door. Save more time in the kitchen with this appliance, which reheats faster than a traditional oven and uses less energy as well.",
+        "isFeatured": false,
+        "remaining": 3,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/102/10233/10233517.jpg"
+    },
+    {
+        "brand": {
+            "name": "Insignia",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Air Fryer",
+        "category": "Appliances",
+        "price": 49.99,
+        "model": "5L - Black",
+        "details": "The Insignia digital air fryer lets you enjoy your favourite foods like crispy French fries, juicy chicken, and more--without all the grease used in traditional frying. It boasts a simple design to make it easy to cook healthy meals for you and your family.",
+        "isFeatured": false,
+        "remaining": 3,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/126/12642/12642276.jpg"
+    },
+    {
+        "brand": {
+            "name": "Sumbeam",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Fryer",
+        "category": "Appliances",
+        "price": 57.99,
+        "model": "1.5L - White",
+        "details": "You don't need to go to a restaurant to enjoy hot and crispy French fries. The Sunbeam deep fryer cooks food to crisp perfection thanks to its 1500-watt stainless steel immersion heating element. The folding fry handle, Surerelease power cord and cool-touch housing make it safe and comfortable use in your home.",
+        "isFeatured": false,
+        "remaining": 83,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/102/10270/10270585.jpg"
+    },
+    {
+        "brand": {
+            "name": "Breville",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Kettle",
+        "category": "Appliances",
+        "price": 57.99,
+        "model": "1.7L - Silver",
+        "details": "For your next Earl Grey or chamomile, boil water in the Breville Soft Top electric kettle. This 1.7L kettle is equipped with a 1500W concealed element for quick boiling, and a multi-directional power base for versatile placement. Safety features include automatic shut-off and boil dry protection.",
+        "isFeatured": false,
+        "remaining": 6,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/105/10574/10574189.jpg"
+    },
+    {
+        "brand": {
+            "name": "Breville",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Water Filter",
+        "category": "Appliances",
+        "price": 24.99,
+        "model": "6-Pack (BREBWF100)",
+        "details": "This Breville BREBWF100 features a 6-pack of replacement water filters for the Breville BKC600XL single serve brewer.",
+        "isFeatured": false,
+        "remaining": 6,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/101/10145/10145661.jpg"
+    },
+    {
+        "brand": {
+            "name": "Vitamix",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Blender",
+        "category": "Appliances",
+        "price": 749.99,
+        "model": "750 Heritage 1.89L 1440-Watt",
+        "details": "When it comes to healthy eating, get creative with the Vitamix Professional Series 750 blender. Sporting a robust 2.2-peak horsepower motor, this Vitamix has 16 variable speed levels, a pulse function, and 5 programmed settings to let you whip up tasty green smoothies, delicious homemade soups, and much more in seconds.",
+        "isFeatured": false,
+        "remaining": 6,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/107/10750/10750122.jpg"
+    },
+    {
+        "brand": {
+            "name": "Apple",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "iPhone",
+        "category": "Cell Phones",
+        "price": 1029.99,
+        "model": "XS 64GB - Silver",
+        "details": "Super Retina in two sizes — including the largest display ever on an iPhone. Even faster Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough dual-camera system. iPhone XS is everything you love about iPhone. Taken to the extreme.",
+        "isFeatured": false,
+        "remaining": 6,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/129/12929/12929785.jpg"
+    },
+    {
+        "brand": {
+            "name": "Samsung",
+            "popularity": false
+        },
+        "isOnSale": true,
+        "isAvailable": true,
+        "name": "Galaxy",
+        "category": "Cell Phones",
+        "price": 1029.99,
+        "model": "S10+ 120GB",
+        "details": "The Samsung Galaxy S10+ with Super AMOLED Infinity Display offers an uninterrupted cinematic experience with a bezel-less screen. Ultrasonic Fingerprint ID provides vault-like in-screen security. The Epic Shot Camera with a full kit of pro lenses lets you capture the world as you see it. Wireless PowerShare lets you charge any Qi-compatible wireless-charge device.",
+        "isFeatured": false,
+        "remaining": 6,
+        "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/133/13392/13392861.jpg"
     }
 
 ]

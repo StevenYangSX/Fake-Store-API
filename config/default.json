@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://stevenYang:steven123@fakestore-ko2m9.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://stevenYang:steven123@fakestore-ko2m9.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtsecret": "secret"
 }
