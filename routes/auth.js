@@ -32,9 +32,9 @@ router.post("/cart", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
     //const {itemID, }
-
-    await user.cart.push(req.body);
-    console.log(user.cart);
+    //console.log("req.body is :", req.body.id);
+    user.cart.push(req.body.id);
+    //console.log("What is here??", user.cart);
     user.save();
     res.json(user.cart);
   } catch (err) {
