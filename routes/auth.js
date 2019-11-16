@@ -33,9 +33,9 @@ router.post("/cart", auth, async (req, res) => {
     const user = await User.findById(req.user.id).select("-password");
     //const {itemID, }
     //console.log("req.body is :", req.body.id);
-    user.cart.push(req.body.id);
+    await user.cart.push(req.body.id);
     //console.log("What is here??", user.cart);
-    user.save();
+    await user.save();
     res.json(user.cart);
   } catch (err) {
     console.error(err.message);
