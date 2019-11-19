@@ -26,6 +26,22 @@ router.get('/', async (req, res) => {
     }
 })
 
+//@route        Get api/items/:id
+//@desc         Get  one single item of id
+//@access       Public
+//for test auth, added some auth
+router.get('/:id', async (req, res) => {
+    try {
+        let item = await Item.findById(req.params.id);
+        if (item) {
+            res.json(item);
+        }
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server Error.")
+    }
+})
+
 
 
 //@route  POST api/items
