@@ -39,7 +39,12 @@ const ItemSchema = mongoose.Schema({
         required: true,
         default: false
     },
-
+    isFeatured: {
+        type: Boolean
+    },
+    imageUrl: {
+        type: String
+    },
     isAvailable: {
         type: Boolean,
         required: true,
