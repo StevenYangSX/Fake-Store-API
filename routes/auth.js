@@ -18,30 +18,30 @@ router.get("/", auth, async (req, res) => {
 });
 
 //go to one user's cart
-router.get("/cart", auth, async (req, res) => {
-  try {
-    const user = await User.findById(req.user.id).select("-password");
-    res.json(user.cart);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server Error.");
-  }
-});
+// router.get("/cart", auth, async (req, res) => {
+//   try {
+//     const user = await User.findById(req.user.id).select("-password");
+//     res.json(user.cart);
+//   } catch (err) {
+//     console.error(err.message);
+//     res.status(500).send("Server Error.");
+//   }
+// });
 //put item in the cart
-router.post("/cart", auth, async (req, res) => {
-  try {
-    const user = await User.findById(req.user.id).select("-password");
-    //const {itemID, }
-    //console.log("req.body is :", req.body.id);
-    await user.cart.push(req.body.id);
-    //console.log("What is here??", user.cart);
-    await user.save();
-    res.json(user.cart);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server Error.");
-  }
-});
+// router.post("/cart", auth, async (req, res) => {
+//   try {
+//     const user = await User.findById(req.user.id).select("-password");
+//     //const {itemID, }
+//     //console.log("req.body is :", req.body.id);
+//     await user.cart.push(req.body.id);
+//     //console.log("What is here??", user.cart);
+//     await user.save();
+//     res.json(user.cart);
+//   } catch (err) {
+//     console.error(err.message);
+//     res.status(500).send("Server Error.");
+//   }
+// });
 
 router.post(
   "/",
