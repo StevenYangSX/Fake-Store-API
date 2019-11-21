@@ -45,20 +45,20 @@ router.get('/:id', async (req, res) => {
 
 
 //@route  POST api/items
-router.post('/', async (req, res) => {
+// router.post('/', async (req, res) => {
 
-    const items = req.body;
-    items.map(async item => {
-        try {
-            const newTtem = new Item(item)
-            const what = await newTtem.save();
-            res.json(what)
-        } catch (err) {
-            console.error(err.message);
-            res.status(500).send("Server Error.")
-        }
-    })
-})
+//     const items = req.body;
+//     items.map(async item => {
+//         try {
+//             const newTtem = new Item(item)
+//             const what = await newTtem.save();
+//             res.json(what)
+//         } catch (err) {
+//             console.error(err.message);
+//             res.status(500).send("Server Error.")
+//         }
+//     })
+// })
 
 
 //@route        Get api/items
