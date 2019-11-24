@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDB = require("./config/db");
 var path = require("path");
+var cors = require('cors')
 //initialize app
 const app = express();
 //connect to database
@@ -21,7 +22,7 @@ app.get("/api", (req, res) => {
 });
 
 //define all routes
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -29,6 +30,7 @@ app.use(function(req, res, next) {
   );
   next();
 });
+app.use(cors());
 app.use("/api/users", require("./routes/users"));
 app.use("/api/items", require("./routes/items"));
 app.use("/api/auth", require("./routes/auth"));
