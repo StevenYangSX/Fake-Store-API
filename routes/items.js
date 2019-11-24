@@ -61,10 +61,10 @@ router.get('/:id', async (req, res) => {
 // })
 
 
-//@route        Get api/items
-//@desc         Get all items
-//@access       private
-//for test auth, added some auth
+// @route        Get api/items
+// @desc         Get all items
+// @access       private
+// for test auth, added some auth
 // router.put('/', auth, async (req, res) => {
 //     try {
 //         const items = req.body;

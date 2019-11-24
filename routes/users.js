@@ -120,4 +120,25 @@ router.post("/cart", auth, async (req, res) => {
   }
 });
 
+//remove item from cart
+router.delete("/cart", auth, async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select("-password");
+    //const {itemID, }
+    //console.log("req.body is :", req.body.id);
+    if (req.body.id === null || req.body.id === undefined) {
+      return res
+        .status(401)
+        .send("Bad request. Res.body must contain valid item id.");
+    }
+    await user.cart.pop(req.body.id);
+    //console.log("What is here??", user.cart);
+    await user.save();
+    res.json(user.cart);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error.");
+  }
+});
+
 module.exports = router;
