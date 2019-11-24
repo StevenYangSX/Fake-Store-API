@@ -131,7 +131,7 @@ router.delete("/cart", auth, async (req, res) => {
         .status(401)
         .send("Bad request. Res.body must contain valid item id.");
     }
-    await user.cart.pop(req.body.id);
+    await user.cart.remove(req.body.id);
     //console.log("What is here??", user.cart);
     await user.save();
     res.json(user.cart);
