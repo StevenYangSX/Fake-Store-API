@@ -129,7 +129,7 @@ router.delete("/cart", auth, async (req, res) => {
     if (req.body.id === null || req.body.id === undefined) {
       return res
         .status(401)
-        .send("Bad request. Res.body must contain valid item id.");
+        .send("Bad request. requset must contain valid item id.");
     }
     await user.cart.remove(req.body.id);
     //console.log("What is here??", user.cart);
