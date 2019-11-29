@@ -14,7 +14,7 @@ const auth = require("../middleware/auth");
 //@desc         Get all items
 //@access       Public
 //for test auth, added some auth
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
     try {
         let items = await Item.find();
         if (items) {
@@ -22,15 +22,15 @@ router.get('/', async (req, res) => {
         }
     } catch (err) {
         console.error(err.message);
-        res.status(500).send("Server Error.")
+        res.status(500).send("Server Error.");
     }
-})
+});
 
 //@route        Get api/items/:id
 //@desc         Get  one single item of id
 //@access       Public
 //for test auth, added some auth
-router.get('/:id', async (req, res) => {
+router.get("/id/:id", async (req, res) => {
     try {
         let item = await Item.findById(req.params.id);
         if (item) {
@@ -38,11 +38,51 @@ router.get('/:id', async (req, res) => {
         }
     } catch (err) {
         console.error(err.message);
-        res.status(500).send("Server Error.")
+        res.status(500).send("Server Error.");
     }
-})
+});
 
+//@route        Get api/items?brand=${brand}
+//@desc         Get   items of a brand
+//@access       Public
+router.get("/brand/:brand", async (req, res) => {
+    try {
+        console.log(req.params.brand);
+        let items = await Item.find({
+            "brand.name": req.params.brand
+        });
+        if (items.length > 0) {
+            res.json(items)
+        } else {
+            res.status(401).send("bad request, no this brand");
+        }
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server Error");
+    }
+    // res.json(req)
+});
 
+//@route        Get api/items?brand=${brand}
+//@desc         Get   items of a brand
+//@access       Public
+router.get("/category/:category", async (req, res) => {
+    try {
+        console.log(req.params.category);
+        let items = await Item.find({
+            "category": req.params.category
+        });
+        if (items.length > 0) {
+            res.json(items)
+        } else {
+            res.status(401).send("bad request, no this category");
+        }
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server Error");
+    }
+    // res.json(req)
+});
 
 //@route  POST api/items
 // router.post('/', async (req, res) => {
@@ -60,7 +100,6 @@ router.get('/:id', async (req, res) => {
 //     })
 // })
 
-
 // @route        Get api/items
 // @desc         Get all items
 // @access       private
@@ -68,7 +107,7 @@ router.get('/:id', async (req, res) => {
 // router.put('/', auth, async (req, res) => {
 //     try {
 //         const items = req.body;
-//         await 
+//         await
 //     } catch (err) {
 //         console.error(err.message);
 //         res.status(500).send("Server Error.")
