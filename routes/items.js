@@ -81,6 +81,27 @@ router.get("/category/:category", async (req, res) => {
   // res.json(req)
 });
 
+//@route        Get api/items?brand=${brand}
+//@desc         Get   items of a brand
+//@access       Public
+router.get("/name/:name", async (req, res) => {
+  try {
+    console.log(req.params.brand);
+    let items = await Item.find({
+      name: req.params.name
+    });
+    if (items.length > 0) {
+      res.json(items);
+    } else {
+      res.status(401).send("bad request, no this brand");
+    }
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+  // res.json(req)
+});
+
 //@route  POST api/items
 // router.post('/', async (req, res) => {
 
