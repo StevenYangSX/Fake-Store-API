@@ -2,7 +2,10 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { check, validationResult } = require("express-validator");
+const {
+  check,
+  validationResult
+} = require("express-validator");
 const User = require("../models/User");
 const config = require("config");
 const auth = require("../middleware/auth");
@@ -14,8 +17,8 @@ router.post(
   "/",
   [
     check("name", "Name is required")
-      .not()
-      .isEmpty(),
+    .not()
+    .isEmpty(),
     check("email", "Valid email is required").isEmail(),
     check("password", "Password must be at least 6 characters").isLength({
       min: 6
@@ -31,7 +34,11 @@ router.post(
       });
     }
 
-    const { name, email, password } = req.body;
+    const {
+      name,
+      email,
+      password
+    } = req.body;
 
     try {
       let user = await User.findOne({
@@ -52,7 +59,7 @@ router.post(
       });
       //hash the password by bcrypt
       //const salt = await bcrypt.genSalt(10);
-      bcrypt.hash(user.password, 10, function(err, hash) {
+      bcrypt.hash(user.password, 10, function (err, hash) {
         // Store hash in your password DB.
         if (err) {
           return console.error(err);
@@ -70,8 +77,7 @@ router.post(
 
         jwt.sign(
           payload,
-          config.get("jwtsecret"),
-          {
+          config.get("jwtsecret"), {
             expiresIn: 36000
           },
           (err, token) => {
@@ -126,15 +132,26 @@ router.delete("/cart", auth, async (req, res) => {
     const user = await User.findById(req.user.id).select("-password");
     //const {itemID, }
     //console.log("req.body is :", req.body.id);
-    if (req.body.id === null || req.body.id === undefined) {
+    if (req.body.id === null || req.body.id === undefined || req.body.allOrSingle === undefined || req.body.allOrSingle === null) {
       return res
         .status(401)
-        .send("Bad request. requset must contain valid item id.");
+        .send("Bad request. requset must contain valid item id and allOrSingle value.");
     }
-    await user.cart.remove(req.body.id);
-    //console.log("What is here??", user.cart);
-    await user.save();
-    res.json(user.cart);
+    if (req.body.allOrSingle === "all") {
+      await user.cart.remove(req.body.id);
+      //console.log("What is here??", user.cart);
+      await user.save();
+      res.json(user.cart);
+    }
+    if (req.body.allOrSingle === 'single') {
+      const firstIndex = user.cart.indexOf(req.body.id);
+      const cartCopy = user.cart;
+      cartCopy.splice(firstIndex, 1);
+      user.cart = cartCopy;
+      await user.save();
+      res.json(user.cart);
+    }
+
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server Error.");
